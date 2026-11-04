@@ -24,3 +24,11 @@ def reverse_complement(sequence):
         result += comp.get(base, "N")
 
     return result[::-1]
+
+if __name__ == "__main__":
+    test = "atcgatcg"
+
+    print("Original:", test)
+    print("Valid:", validate_dna(test))
+    print("RNA:", transcribe_dna(test))
+    print("Reverse complement:", reverse_complement(test))

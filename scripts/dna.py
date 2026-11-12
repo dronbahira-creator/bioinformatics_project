@@ -1,4 +1,5 @@
 def validate_dna(sequence):
+    """Check if a sequence contains only valid DNA bases (A, T, C, G)."""
     sequence = sequence.upper()
     valid = set("ATCG")
 
@@ -16,6 +17,7 @@ def transcribe_dna(sequence):
 
 
 def reverse_complement(sequence):
+    """Returns the reverse complement of a DNA sequence."""
     sequence = sequence.upper()
     comp = {"A": "T", "T": "A", "C": "G", "G": "C", "N": "N"}
     result = ""
